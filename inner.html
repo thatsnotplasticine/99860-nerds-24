@@ -8,100 +8,124 @@
 	<body>
 		<!-- Хедер: логотип + меню + корзина -->
 		<header class="main-header">
-			<div class="container">
+			<nav class="main-header__nav">
 
 				<!-- Логотип -->
-				<div class="logo">
-				<!-- <h1>Дизайн-студия Нёрдс</h1> -->
-					<img src="URL" alt="Нёрдс" width="160" height="65">
-				</div>
+				<a class="logo" href="index.html">
+					<img class="logo__image" src="http://placehold.it/100x50" width="160" height="65" alt="Нёрдс">
+				</a>
 
 				<!-- Меню -->
-				<nav class="main-navigation">
-					<ul>
-						<li>
-							<a href="#">Студия</a>
-						</li>
-						<li>
-							<a href="#">Клиенты</a>
-						</li>
-						<li>
-							<a href="#">Магазин</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
-				</nav>
+				<ul class="menu">
+					<li class="menu__item">
+						<a class="menu__link" href="#">Студия</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">Клиенты</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">Магазин</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#">Контакты</a>
+					</li>
+				</ul>
 
 				<!-- Корзина -->
-				<div class="user-block">
-					<a class="cart" href="#">Корзина</a>
+				<div class="cart">
+					<a class="cart__link" href="#">Корзина</a>
 				</div>
 
-			</div>
+			</nav>
 		</header>
-
-		<!-- Название страницы (не знаю, почему не h какой-нибудь, запуталась) -->
-		<div class="title">
-			<p>Магазин готовых шаблонов</p>
-		</div>
 
 		<!-- Главная часть страницы -->
 		<main class="container">
+			<h1 class="title">Магазин готовых шаблонов</h1>
 			<!-- Боковая панель с выбором параметров фильтрации -->
 			<!-- Сортировка -->
 
-			<ul class="design-list">
-				<li class="design-item">
-					<a href="#"><img src="URL" alt="Sedona" width="100" height="100"></a>
+			<ul class="catalog">
+				<li class="product">
+					<img class="product__image" src="http://placehold.it/150x300" width="100" height="100" alt="Sedona">
+					<div class="product__popup">
+			      <a class="product__title" href="#">Sedona</a>
+			      <p class="product__description">Информационный сайтдля туристов</p>
+			      <button class="product__button button button--red" type="button">9 990 руб.</button>
+			    </div>
 				</li>
 
-				<li class="design-item">
-					<a href="#"><img src="URL" alt="Pink" width="100" height="100"></a>
+				<li class="product">
+					<img class="product__image" src="http://placehold.it/150x300" width="100" height="100" alt="Pink">
+					<div class="product__popup">
+			      <a class="product__title" href="#">Pink</a>
+			      <p class="product__description">Информационный сайтдля туристов</p>
+			      <button class="product__button button button--red" type="button">9 990 руб.</button>
+			    </div>
 				</li>
 
-				<li class="design-item">
-					<a href="#"><img src="URL" alt="Borodinski" width="100" height="100"></a>
+				<li class="product">
+					<img class="product__image" src="http://placehold.it/150x300" width="100" height="100" alt="Borodinski">
+					<div class="product__popup">
+			      <a class="product__title" href="#">Borodinski</a>
+			      <p class="product__description">Информационный сайтдля туристов</p>
+			      <button class="product__button button button--red" type="button">9 990 руб.</button>
+			    </div>
 				</li>
 
-				<li class="design-item">
-					<a href="#"><img src="URL" alt="Mishka" width="100" height="100"></a>
+				<li class="product">
+					<img class="product__image" src="http://placehold.it/150x300" width="100" height="100" alt="Mishka">
+					<div class="product__popup">
+			      <a class="product__title" href="#">Mishka</a>
+			      <p class="product__description">Информационный сайтдля туристов</p>
+			      <button class="product__button button button--red" type="button">9 990 руб.</button>
+			    </div>
 				</li>
 
-				<li class="design-item">
-					<a href="#"><img src="URL" alt="A Plus" width="100" height="100"></a>
+				<li class="product">
+					<img class="product__image" src="http://placehold.it/150x300" width="100" height="100" alt="A Plus">
+					<div class="product__popup">
+			      <a class="product__title" href="#">A Plus</a>
+			      <p class="product__description">Информационный сайтдля туристов</p>
+			      <button class="product__button button button--red" type="button">9 990 руб.</button>
+			    </div>
 				</li>
 
-				<li class="design-item">
-					<a href="#"><img src="URL" alt="Kvast" width="100" height="100"></a>
+				<li class="product">
+					<img class="product__image" src="http://placehold.it/150x300" width="100" height="100" alt="Kvast">
+					<div class="product__popup">
+			      <a class="product__title" href="#">Kvast</a>
+			      <p class="product__description">Информационный сайтдля туристов</p>
+			      <button class="product__button button button--red" type="button">9 990 руб.</button>
+			    </div>
 				</li>
 			</ul>
 
 			<!-- Навигация по страницам -->
-			<div class="pages">
-				<a href="#">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">Следующая</a>
-			</div>
+			<ul class="pagination">
+				<li class="pagination__item pagination__item--current"><a class="pagination__link" href="#">1</a></li>
+				<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+				<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+				<li class="pagination__item"><a class="pagination__link" href="#">Следующая</a></li>
+			</ul>
 		</main>
 
 		<!-- Карта -->
-		<div class="map"></div>
+		<section class="contact">
+			<div class="contact__info">
+			</div>
+		</section>
 
 		<!-- Футер -->
-		<footer>
-			<div class="footer-social">
-				<a class="social-button social-button-vk" href="#">Вконтакте</a>
-				<a class="social-button social-button-fb"href="#">Фейсбук</a>
-				<a class="social-button social-button-inst"href="#">Инстаграм</a>
-			</div>
+		<footer class="main-footer">
+			<ul class="social">
+				<li class="social__item"><a class="social__button" href="#">Вконтакте</a></li>
+				<li class="social__item"><a class="social__button" href="#">Фейсбук</a></li>
+				<li class="social__item"><a class="social__button" href="#">Инстаграм</a></li>
+			</ul>
 
-			<div>
-				<p>Давайте дружить, это выгодно!</p>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
-			</div>
+			<p class="main-footer__slogan">Давайте дружить, это выгодно!</p>
+			<p class="main-footer__discount">Скидка 10% для друзей из социальных сетей.</p>
 		</footer>
-	</body>
+</body>
 </html>
